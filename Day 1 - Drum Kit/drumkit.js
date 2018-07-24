@@ -20,3 +20,7 @@ function removeTransition(e){
 
 const keys = document.querySelectorAll('.key');
 keys.forEach( key => key.addEventListener('transitionend', removeTransition));
+
+//Need to add record function, once stopped will hold onto recorded file
+//Need to create function to play recorded file on repeat
+//Need to add other instruments
