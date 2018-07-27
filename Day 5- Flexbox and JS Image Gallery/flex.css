@@ -68,11 +68,15 @@ body{
 }
 
 .panel.open-active > *:first-child{
-  transform: translateY(0)
+  transform: translateY(0);
 }
 
 .panel > *:last-child{
   transform: translateY(100%);
+}
+
+.panel.open-active > *:last-child{
+  transform: translateY(0);
 }
 
 .panel p {
@@ -86,4 +90,5 @@ body{
 }
 .panel.open {
       font-size:40px;
+      flex:5;
 }
