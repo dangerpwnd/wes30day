@@ -67,7 +67,11 @@ body{
   transform: translateY(-100%);
 }
 
+<<<<<<< Updated upstream
 .panel.open-active > *:first-child{
+=======
+.panel.open-active > *:first-child {
+>>>>>>> Stashed changes
   transform: translateY(0);
 }
 
@@ -75,7 +79,11 @@ body{
   transform: translateY(100%);
 }
 
+<<<<<<< Updated upstream
 .panel.open-active > *:last-child{
+=======
+.panel.open-active > *:last-child {
+>>>>>>> Stashed changes
   transform: translateY(0);
 }
 
