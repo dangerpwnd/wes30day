@@ -33,33 +33,37 @@ body{
 }
 
 .baratheon {
-  background-image:
+  background-image:url('./images/baratheon.jpg');
 }
 
 .greyjoy {
-  background-image:
+  background-image:url('./images/greyjoy.jpg');
 }
 
 .martell {
-  background-image:
+  background-image:url('./images/martell.jpg');
 }
 
 .stark {
-  background-image:
+  background-image:url('./images/stark.jpg');
 }
 
 .lannister {
-  background-image:
+  background-image:url('./images/lannister.jpg');
 }
 
 .tully {
-  background-image:
+  background-image:url('./images/tully.jpg');
+}
+
+.tyrell {
+  background-image:url('./images/tyrell.jpg');
 }
 
 .arryn {
-  background-image:
+  background-image:url('./images/arryn.jpg');
 }
 
 .targaryen {
-  background-image:
+  background-image:url('./images/targaryen.jpg');
 }
