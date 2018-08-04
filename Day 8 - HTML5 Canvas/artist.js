@@ -8,16 +8,20 @@ ctx.strokeStyle = "#BADA55";
 ctx.lineJoin = "round";
 ctx.lineCap = "round";
 ctx.lineWidth = 100;
+//Blending modes
+ctx.globalCompositeOperation = "multiply";
 
 let isDrawing = false;
 let lastX = 0;
 let lastY = 0;
-
+let hue = 300;
+let direction = true;
 
 //click and drag functionality
 function draw(e){
   if(!isDrawing) return;
   console.log(e);
+  ctx.strokeStyle = `hsl(${hue}, 100%,50%)`;
   ctx.beginPath();
   //start from
   ctx.moveTo(lastX, lastY);
@@ -28,7 +32,21 @@ function draw(e){
   // lastY = e.offsetY;
   //Destructuring an array
   [lastX, lastY] = [e.offsetX, e.offsetY];
+  hue++;
+  if (hue >= 360){
+    hue = 0;
+  }
+  if (ctx.lineWidth >= 100 || ctx.lineWidth <= 1) {
+    direction = !direction;
+  }
+  if(direction) {
+    ctx.lineWidth++;
+  } else {
+    ctx.lineWidth--;
+  }
 }
+
+
 
 canvas.addEventListener('mousemove', draw);
 canvas.addEventListener('mouseup', () => isDrawing = false);
